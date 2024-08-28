@@ -38,4 +38,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 <br>
 <br>
 
-<video controls src="My Portfolio.mp4" title="Title"></video>
+<!-- <video controls src="My Portfolio.mp4" title="Title"></video> -->
+![Video Preview](/public/My%20Portfolio.mp4)
