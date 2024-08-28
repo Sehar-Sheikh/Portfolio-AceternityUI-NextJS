@@ -45,10 +45,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 Here are some images of the project using Aceternity UI components:
 
 ![Wavy Background](/public/1_wavybg.png)  
-![Contact Section](/public/contact-1.png)  
-![Floating Navigation About](/public/FloatingNav_About-1.png)  
-![Projects Section](/public/Projects-1.png)  
-![Slogan Section](/public/slogan-1.png)  
+![Floating Navigation About](/public/FloatingNav_About.png)  
+![Projects Section](/public/Projects.png)  
+![Slogan Section](/public/slogan.png)  
+![Contact Section](/public/contact.png)  
 
 ## Project Video
 
