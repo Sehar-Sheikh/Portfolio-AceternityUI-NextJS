@@ -11,7 +11,7 @@ export default function About() {
       id="about"
       className="bg-black flex flex-col justify-center items-center px-10 md:px-32 lg:px-24"
     >
-      {/* <h2 className="text-white text-3xl m-5 font-bold">About Us</h2>
+      <h2 className="text-white text-3xl m-5 font-bold">About Us</h2>
 
       <div className="h-[20rem] w-full bg-black  bg-grid-small-white/[0.5] bg-grid-small-black/[0.2] relative flex items-center justify-center">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]">
@@ -21,10 +21,10 @@ export default function About() {
 
 
 
-      </div> */}
+      </div>
 
 
-      <div className="w-[calc(100%-4rem)] mx-auto rounded-md  h-[30rem] overflow-hidden">
+      {/* <div className="w-[calc(100%-4rem)] mx-auto rounded-md  h-[30rem] overflow-hidden">
         <Vortex
           backgroundColor="black"
           className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
@@ -33,7 +33,7 @@ export default function About() {
         <TextGenerateEffect words={words} />
           
         </Vortex>
-      </div>
+      </div> */}
 
     </section>
   );

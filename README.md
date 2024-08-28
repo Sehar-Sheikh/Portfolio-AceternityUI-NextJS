@@ -38,5 +38,26 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 <br>
 <br>
 
-<!-- <video controls src="My Portfolio.mp4" title="Title"></video> -->
-![Video Preview](/public/My%20Portfolio.mp4)
+# Project Images Using Aceternity UI Components
+
+## Project Screenshots
+
+Here are some images of the project using Aceternity UI components:
+
+![Wavy Background](/public/1_wavybg.png)  
+![Contact Section](/public/contact-1.png)  
+![Floating Navigation About](/public/FloatingNav_About-1.png)  
+![Projects Section](/public/Projects-1.png)  
+![Slogan Section](/public/slogan-1.png)  
+
+## Project Video
+
+<p>Here is the video of the project, which includes some animated effects:</p>
+
+<p align="center">
+  <a href="/public/My%20Portfolio.mp4">
+    <img src="/public/1_wavybg.png" alt="Watch the video" width="400"/>
+  </a>
+</p>
+
+
