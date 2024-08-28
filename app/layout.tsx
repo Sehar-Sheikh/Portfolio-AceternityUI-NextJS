@@ -4,7 +4,7 @@ import "./globals.css";
 
 import { cn } from "@/lib/utils";
 import Home from "./page";
-import { GalleryHorizontal, HomeIcon } from "lucide-react";
+import { GalleryHorizontal, HomeIcon, Phone, User } from "lucide-react";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import Footer from "@/components/ui/footer";
 
@@ -21,13 +21,23 @@ export const metadata: Metadata = {
 const navItems = [
   {
     name: "Home",
-    link: "/",
+    link: "#home",
     icon: <HomeIcon className="h-4 w-4 text-neutral-500 dark:text-white" />,
   },
   {
     name: "Projects",
     link: "#projects",
     icon: <GalleryHorizontal className="h-4 w-4 text-neutral-500 dark:text-white" />,
+  },
+  {
+    name: "Contact",
+    link: "#contact",
+    icon: <Phone className="h-4 w-4 text-neutral-500 dark:text-white" />,
+  },
+  {
+    name: "About",
+    link: "#about",
+    icon: <User className="h-4 w-4 text-neutral-500 dark:text-white" />,
   }
 ];
 export default function RootLayout({
@@ -36,7 +46,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",

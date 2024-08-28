@@ -4,12 +4,18 @@ import { useRef } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
+
+interface Project {
+  image: string;
+  link: string;
+}
 
 export const ParallaxScroll = ({
-  images,
+  projects,
   className,
 }: {
-  images: string[];
+  projects: Project[];
   className?: string;
 }) => {
   const gridRef = useRef<any>(null);
@@ -22,11 +28,11 @@ export const ParallaxScroll = ({
   const translateSecond = useTransform(scrollYProgress, [0, 1], [0, 200]);
   const translateThird = useTransform(scrollYProgress, [0, 1], [0, -200]);
 
-  const third = Math.ceil(images.length / 3);
+  const third = Math.ceil(projects.length / 3);
 
-  const firstPart = images.slice(0, third);
-  const secondPart = images.slice(third, 2 * third);
-  const thirdPart = images.slice(2 * third);
+  const firstPart = projects.slice(0, third);
+  const secondPart = projects.slice(third, 2 * third);
+  const thirdPart = projects.slice(2 * third);
 
   return (
     <div
@@ -43,39 +49,45 @@ export const ParallaxScroll = ({
               style={{ y: translateFirst }} // Apply the translateY motion value here
               key={"grid-1" + idx}
             >
+              <Link href={el.link} target="_blank">
               <Image
-                src={el}
-                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
+                src={el.image}
+                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 hover:scale-105 transition ease-in duration-300"
                 height="400"
                 width="400"
                 alt="thumbnail"
               />
+              </Link>
             </motion.div>
           ))}
         </div>
         <div className="grid gap-10">
           {secondPart.map((el, idx) => (
             <motion.div style={{ y: translateSecond }} key={"grid-2" + idx}>
+              <Link href={el.link} target="_blank">
               <Image
-                src={el}
-                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
+                src={el.image}
+                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 hover:scale-105 transition ease-in duration-300"
                 height="400"
                 width="400"
                 alt="thumbnail"
               />
+              </Link>
             </motion.div>
           ))}
         </div>
         <div className="grid gap-10">
           {thirdPart.map((el, idx) => (
             <motion.div style={{ y: translateThird }} key={"grid-3" + idx}>
+              <Link href={el.link} target="_blank">
               <Image
-                src={el}
-                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
+                src={el.image}
+                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 hover:scale-105 transition ease-in duration-300"
                 height="400"
                 width="400"
                 alt="thumbnail"
               />
+              </Link>
             </motion.div>
           ))}
         </div>
